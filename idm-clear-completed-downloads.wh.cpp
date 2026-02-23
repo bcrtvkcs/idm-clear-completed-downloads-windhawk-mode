@@ -11,6 +11,35 @@
 // @compilerOptions -luser32
 // ==/WindhawkMod==
 
+// ==WindhawkModReadme==
+/*
+# IDM Clear Completed Downloads
+
+This mod automatically cleans up completed downloads every time you open the Internet Download Manager (IDM) window.
+
+## What Does It Do?
+
+When IDM's main window opens, the mod kicks in and automatically performs the following:
+
+1. **Deletes completed downloads** - Triggers IDM's "Delete completed downloads" command
+2. **Auto-dismisses the confirmation dialog** - Hides the confirmation popup and clicks "Yes"
+3. **Targets only the main window** - Ignores other IDM windows like Settings, download dialogs, etc.
+
+## How It Works
+
+The mod hooks the `ShowWindow` function in the Windows API. When IDM makes a window visible:
+
+- Checks if the window's class name is `#32770` (standard dialog class)
+- Verifies the window is **ownerless** (no owner) and **has a menu bar**
+- Only the IDM main window satisfies both conditions, so other windows are filtered out
+- If conditions are met, the cleanup task is launched in a separate thread
+
+## Target Process
+
+- The mod only runs inside the `idman.exe` process
+*/
+// ==/WindhawkModReadme==
+
 #include <windows.h>
 #include <wchar.h>
 
@@ -149,5 +178,3 @@ BOOL Wh_ModInit() {
 
     return TRUE;
 }
-
-

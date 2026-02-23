@@ -36,7 +36,7 @@ The mod hooks the `ShowWindow` function in the Windows API. When IDM makes a win
 
 ## Target Process
 
-- The mod only runs inside the `idman.exe` process
+- This mod is only for Targets the `idman.exe` process and does not affect other programs.
 */
 // ==/WindhawkModReadme==
 
@@ -178,3 +178,4 @@ BOOL Wh_ModInit() {
 
     return TRUE;
 }
+

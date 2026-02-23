@@ -1,4 +1,4 @@
-# IDM Completed Downloads Cleaner
+# IDM Clear Completed Downloads
 
 A [Windhawk](https://windhawk.net/) mod that automatically cleans up completed downloads every time you open the Internet Download Manager (IDM) window.
 
@@ -24,7 +24,7 @@ The mod hooks the `ShowWindow` function in the Windows API. When IDM makes a win
 ## Installation
 
 1. Install [Windhawk](https://windhawk.net/)
-2. Search for "IDM Completed Downloads Cleaner" in the mod browser
+2. Search for "IDM Clear Completed Downloads" in the mod browser
 3. Click Install
 4. You're all set!
 

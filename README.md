@@ -1,6 +1,6 @@
 # IDM Clear Completed Downloads
 
-A [Windhawk](https://windhawk.net/) mod that automatically cleans up completed downloads every time you open the Internet Download Manager (IDM) window.
+A [Windhawk](https://windhawk.net/) mod that automatically cleans up completed downloads every time you open the [Internet Download Manager (IDM)](https://www.internetdownloadmanager.com/) window.
 
 ## What Does It Do?
 

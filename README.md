@@ -10,8 +10,6 @@ When IDM's main window opens, the mod kicks in and automatically performs the fo
 2. **Auto-dismisses the confirmation dialog** - Hides the confirmation popup and clicks "Yes"
 3. **Targets only the main window** - Ignores other IDM windows like Settings, download dialogs, etc.
 
-All of this happens in the background within milliseconds.
-
 ## How It Works
 
 The mod hooks the `ShowWindow` function in the Windows API. When IDM makes a window visible:
@@ -27,12 +25,6 @@ The mod hooks the `ShowWindow` function in the Windows API. When IDM makes a win
 2. Search for "IDM Clear Completed Downloads" in the mod browser
 3. Click Install
 4. You're all set!
-
-## Requirements
-
-- [Windhawk](https://windhawk.net/)
-- [Internet Download Manager (IDM)](https://www.internetdownloadmanager.com/)
-- Windows operating system
 
 ## Target  Process
 
